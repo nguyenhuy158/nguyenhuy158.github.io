@@ -134,8 +134,8 @@ onValue(starCountRef, (snapshot) => {
                                         startDate: orderStartDate,
                                         status: parseInt(orderStatus),
                                         studioId: orderStudioId,
-                                        total: orderTotal,
-                                        totalHour: orderTotalHour,
+                                        total: parseInt(orderTotal),
+                                        totalHour: parseInt(orderTotalHour),
                                 };
                                 $("#modelEdit #modelOrderId").text(orderId);
                                 $("#modelEdit #orderBookTime").val(
