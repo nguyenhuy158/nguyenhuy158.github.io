@@ -15,41 +15,40 @@
 
 <body>
 
+    <h1>Welcome <span id="username"></span></h1>
+
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-2">
-            </div>
-            <div class="col-md-8">
-                <form role="form">
-                    <div class="form-group">
+            <div class="col-md-12">
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./category.html">Category</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./studio.html">Studio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="./order.html">Order</a>
+                    </li>
+                    <li class="nav-item dropdown ml-md-auto">
+                        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink"
+                            data-toggle="dropdown">Feature</a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Action 1</a>
+                            <a class="dropdown-item" href="#">Action 2</a>
+                            <a class="dropdown-item" href="#">Action 3</a>
 
-                        <label for="username">
-                            Username
-                        </label>
-                        <input type="text" class="form-control" id="username" required />
-                    </div>
-                    <div class="form-group">
+                            <div class="dropdown-divider">
 
-                        <label for="password">
-                            Password
-                        </label>
-                        <input type="password" class="form-control" id="password" required />
-                    </div>
-                    <!-- type="submit" -->
-                    <button id="btnSubmit" class="btn btn-primary">
-                        Login
-                    </button>
-                </form>
-            </div>
-            <div class="col-md-2">
+                            </div> <a class="dropdown-item" href="#">Action 4</a>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
 
-    <script>
-
-    </script>
-    <script type="module" src="./scripts/home.js">
+    <script type="module" src="./scripts/home.js" />
     </script>
 </body>
 
