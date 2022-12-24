@@ -56,7 +56,7 @@ document.getElementById("btnSubmit").onclick = function (e) {
                                 console.log(user);
 
                                 if (user.isAdmin) {
-                                        window.location.replace("./index.html");
+                                        window.location.replace("./home.html");
                                         localStorage.setItem(
                                                 "user",
                                                 JSON.stringify(user)
