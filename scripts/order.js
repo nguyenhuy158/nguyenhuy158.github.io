@@ -126,6 +126,7 @@ onValue(starCountRef, (snapshot) => {
                                 const orderTotalHour =
                                         e.target.parentNode.dataset
                                                 .orderTotalHour;
+                                order = null;
                                 order = {
                                         id: orderId,
                                         bookTime: orderBookTime,
@@ -165,11 +166,12 @@ onValue(starCountRef, (snapshot) => {
                 const updates = {};
                 updates["/Request/" + order.id] = order;
                 const result = update(ref(db), updates);
-                console.log(
-                        "🚀 ~ file: order.js:168 ~ document.getElementById ~ result",
-                        result
-                );
                 $("#modelEdit").modal("hide");
+                console.log(
+                        "🚀 ~ file: order.js:165 ~ document.getElementById ~ order",
+                        order
+                );
+                location.reload();
         });
 
         // delete
